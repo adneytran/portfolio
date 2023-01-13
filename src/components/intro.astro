@@ -1,0 +1,31 @@
+---
+import { Icon } from "astro-icon";
+import ContentSection from "~/components/content-section.astro";
+---
+
+<ContentSection title="About Me" id="about">
+  <!-- <Icon slot="logo" name="logomark" class="h-32" /> -->
+  <Fragment slot="lead">
+    I am a web developer specializing in
+    <span class="text-primary">fullstack React</span> applications. Utilizing <span
+      class="text-primary">bleeding-edge</span
+    > technologies, I strive to deliver <span class="text-primary">rich</span>,
+    <span class="text-primary">modern</span> user experiences on the web.
+  </Fragment>
+  <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
+    <a
+      href="https://github.com/adneytran"
+      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
+    >
+      <Icon class="h-8" name={"fa-brands:github"} />
+      <span>Github</span>
+    </a>
+    <a
+      href="https://www.linkedin.com/in/andytran002/"
+      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
+    >
+      <Icon class="h-8" name={"fa-brands:linkedin"} />
+      <span>LinkedIn</span>
+    </a>
+  </div>
+</ContentSection>

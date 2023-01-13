@@ -1,0 +1,85 @@
+---
+import CompatibilityList from "~/components/skills-list.astro";
+import ContentSection from "~/components/content-section.astro";
+import type { CompatibilityItem } from "~/types";
+
+const technologies: Array<CompatibilityItem> = [
+  {
+    title: "TypeScript",
+    icon: "technologies/typescript",
+    url: "https://www.typescriptlang.org/",
+  },
+  {
+    title: "React",
+    icon: "technologies/react",
+    url: "https://reactjs.org/",
+  },
+  {
+    title: "NextJS",
+    icon: "technologies/nextjs",
+    url: "https://nextjs.org/",
+  },
+
+  {
+    title: "GraphQL",
+    icon: "technologies/graphql",
+    url: "https://graphql.org/",
+  },
+  {
+    title: "tRPC",
+    icon: "technologies/trpc",
+    url: "https://trpc.io/",
+  },
+  {
+    title: "Tailwind",
+    icon: "technologies/tailwind",
+    url: "https://tailwindcss.com/",
+  },
+];
+
+const tools: Array<CompatibilityItem> = [
+  {
+    title: "Git",
+    icon: "tools/git",
+    url: "https://git-scm.com/",
+  },
+  {
+    title: "VSCode",
+    icon: "tools/vscode",
+    url: "https://code.visualstudio.com/",
+  },
+  {
+    title: "Docker",
+    icon: "tools/docker",
+    url: "https://www.docker.com/",
+  },
+  {
+    title: "GitHub",
+    icon: "fa-brands:github",
+    url: "https://pages.github.com/",
+  },
+  {
+    title: "AWS",
+    icon: "tools/aws",
+    url: "https://aws.amazon.com/",
+  },
+  {
+    title: "Prisma",
+    icon: "tools/prisma",
+    url: "https://www.prisma.io/",
+  },
+];
+---
+
+<ContentSection title="Skills" id="skills">
+  <Fragment slot="lead" class="text-2xk">
+    <span class="text-primary">Blazingly fast</span> delivery while keeping the product
+    <span class="text-primary">scalable</span> and <span class="text-primary"
+      >maintainable</span
+    > is my doctrine. These technologies maximize <span class="text-primary"
+      >developer velocity</span
+    > without comprimise.
+  </Fragment>
+  <CompatibilityList items={technologies} title="Technologies" />
+  <CompatibilityList items={tools} title="Tools" />
+</ContentSection>
