@@ -22,6 +22,16 @@ module.exports = {
       borderColor: {
         default: "var(--color-border)",
       },
+      animation: {
+        fade: "fadeIn 1.5s ease-in-out",
+      },
+
+      keyframes: () => ({
+        fadeIn: {
+          "0%": { opacity: "0%", transform: "translateY(-5rem)" },
+          "100%": { opacity: "100%", transform: "translateY(0px)" },
+        },
+      }),
     },
   },
   corePlugins: {
